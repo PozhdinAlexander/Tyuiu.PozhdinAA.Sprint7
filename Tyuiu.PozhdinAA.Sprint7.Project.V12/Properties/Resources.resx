@@ -118,14 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="aMf0kvpIW4E-gigapixel-low_res-scale-7_00x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aMf0kvpIW4E-gigapixel-low_res-scale-7_00x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-loyal-customer-8922301 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-loyal-customer-8922301 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="U5ssc7c55IVdnI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\U5ssc7c55IVdnI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-program-4191099 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-program-4191099 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aMf0kvpIW4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aMf0kvpIW4E.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-course-4728486 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-course-4728486 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-icon-loyalty-program-122452" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-loyalty-program-122452.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-icon-program-4191099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-program-4191099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Без имениsssss-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Без имениsssss-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

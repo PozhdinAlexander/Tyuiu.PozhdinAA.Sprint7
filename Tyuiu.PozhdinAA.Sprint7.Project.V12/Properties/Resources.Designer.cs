@@ -63,9 +63,9 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aMf0kvpIW4E {
+        internal static System.Drawing.Bitmap free_icon_course_4728486__1_ {
             get {
-                object obj = ResourceManager.GetObject("aMf0kvpIW4E", resourceCulture);
+                object obj = ResourceManager.GetObject("free-icon-course-4728486 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aMf0kvpIW4E_gigapixel_low_res_scale_7_00x {
+        internal static System.Drawing.Bitmap free_icon_loyal_customer_8922301__1_ {
             get {
-                object obj = ResourceManager.GetObject("aMf0kvpIW4E-gigapixel-low_res-scale-7_00x", resourceCulture);
+                object obj = ResourceManager.GetObject("free-icon-loyal-customer-8922301 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,29 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap U5ssc7c55IVdnI {
+        internal static System.Drawing.Bitmap free_icon_loyalty_program_122452 {
             get {
-                object obj = ResourceManager.GetObject("U5ssc7c55IVdnI", resourceCulture);
+                object obj = ResourceManager.GetObject("free-icon-loyalty-program-122452", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_program_4191099 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-program-4191099", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_icon_program_4191099__1_ {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-program-4191099 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

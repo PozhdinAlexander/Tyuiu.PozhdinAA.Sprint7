@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}</ProjectGuid>
+    <ProjectGuid>{16A19153-536C-43D1-BF24-1FEE2EF76BE5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tyuiu.PozhdinAA.Sprint7.Project.V12</RootNamespace>
     <AssemblyName>Tyuiu.PozhdinAA.Sprint7.Project.V12</AssemblyName>
@@ -46,23 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAbout.cs">
+    <Compile Include="FormStatistic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAbout.Designer.cs">
-      <DependentUpon>FormAbout.cs</DependentUpon>
+    <Compile Include="FormStatistic.Designer.cs">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBrowser.cs">
+    <Compile Include="FormManual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBrowser.Designer.cs">
-      <DependentUpon>FormBrowser.cs</DependentUpon>
+    <Compile Include="FormManual.Designer.cs">
+      <DependentUpon>FormManual.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormFirma.cs">
+    <Compile Include="FormInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFirma.Designer.cs">
-      <DependentUpon>FormFirma.cs</DependentUpon>
+    <Compile Include="FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -70,25 +70,16 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormStat.Designer.cs">
-      <DependentUpon>FormStat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAbout.resx">
-      <DependentUpon>FormAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBrowser.resx">
-      <DependentUpon>FormBrowser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormFirma.resx">
-      <DependentUpon>FormFirma.cs</DependentUpon>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManual.resx">
+      <DependentUpon>FormManual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,13 +105,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aMf0kvpIW4E-gigapixel-low_res-scale-7_00x.jpg" />
+    <None Include="Resources\free-icon-program-4191099.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aMf0kvpIW4E.jpg" />
+    <None Include="Resources\free-icon-program-4191099 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\U5ssc7c55IVdnI.jpg" />
+    <None Include="Resources\free-icon-loyal-customer-8922301 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-course-4728486 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-loyalty-program-122452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.PozhdinAA.Sprint7.Project.V12.Lib\Tyuiu.PozhdinAA.Sprint7.Project.V12.Lib.csproj">
+      <Project>{e9368bd7-7e3f-43a3-bc3f-f52d23d82068}</Project>
+      <Name>Tyuiu.PozhdinAA.Sprint7.Project.V12.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Без имениsssss-1.png" />

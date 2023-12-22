@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PozhdinAA.Sprint7.Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PozhdinAA.Sprint7.Project.V12.Test", "Tyuiu.PozhdinAA.Sprint7.Project.V12.Test\Tyuiu.PozhdinAA.Sprint7.Project.V12.Test.csproj", "{DB8983CA-2672-4546-8253-DC339A1A831A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PozhdinAA.Sprint7.Project.V12", "Tyuiu.PozhdinAA.Sprint7.Project.V12\Tyuiu.PozhdinAA.Sprint7.Project.V12.csproj", "{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PozhdinAA.Sprint7.Project.V12", "Tyuiu.PozhdinAA.Sprint7.Project.V12\Tyuiu.PozhdinAA.Sprint7.Project.V12.csproj", "{16A19153-536C-43D1-BF24-1FEE2EF76BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{DB8983CA-2672-4546-8253-DC339A1A831A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB8983CA-2672-4546-8253-DC339A1A831A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB8983CA-2672-4546-8253-DC339A1A831A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA99C41D-ABE2-4475-89A3-8A06A5403B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A19153-536C-43D1-BF24-1FEE2EF76BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A19153-536C-43D1-BF24-1FEE2EF76BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A19153-536C-43D1-BF24-1FEE2EF76BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A19153-536C-43D1-BF24-1FEE2EF76BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,7 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E9368BD7-7E3F-43A3-BC3F-F52D23D82068} = {4E22A649-848F-458D-A755-2F65145FC52F}
 		{DB8983CA-2672-4546-8253-DC339A1A831A} = {4E22A649-848F-458D-A755-2F65145FC52F}
-		{DA99C41D-ABE2-4475-89A3-8A06A5403B6B} = {4E22A649-848F-458D-A755-2F65145FC52F}
+		{16A19153-536C-43D1-BF24-1FEE2EF76BE5} = {4E22A649-848F-458D-A755-2F65145FC52F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {163D3B03-B952-4724-B342-EC126881FFFB}
