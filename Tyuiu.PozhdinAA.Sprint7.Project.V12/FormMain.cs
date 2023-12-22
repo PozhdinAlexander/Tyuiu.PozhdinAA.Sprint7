@@ -203,6 +203,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
 
         private void buttonSearchPC_PAA_Click(object sender, EventArgs e)
         {
+
         }
 
         private void buttonAddNewSeller_PAA_Click(object sender, EventArgs e)
@@ -295,6 +296,24 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonSavePC_PAA_Click(object sender, EventArgs e)
+        {
+            string[,] data = new string[dataGridViewPC_PAA.RowCount, dataGridViewPC_PAA.ColumnCount];
+            for (int i = 0; i < dataGridViewPC_PAA.RowCount; i++)
+            {
+                for (int j = 0; j < dataGridViewPC_PAA.ColumnCount; j++)
+                {
+                    data[i, j] = dataGridViewPC_PAA.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+            bool completed = ds.UpdateData(pathPC, data);
+
+            if (completed)
+            {
+                MessageBox.Show("Данные обновлены!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

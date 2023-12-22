@@ -67,12 +67,12 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxPhoneNumber_PAA = new System.Windows.Forms.TextBox();
             this.textBoxAddress_PAA = new System.Windows.Forms.TextBox();
             this.textBoxNameSeller_PAA = new System.Windows.Forms.TextBox();
-            this.buttonSavePC_PAA = new System.Windows.Forms.Button();
             this.buttonAddNewPC_PAA = new System.Windows.Forms.Button();
             this.dataGridViewPC_PAA = new System.Windows.Forms.DataGridView();
             this.buttonSearchSeller_PAA = new System.Windows.Forms.Button();
             this.textBoxSearch_PAA = new System.Windows.Forms.TextBox();
             this.labelSearch_PAA = new System.Windows.Forms.Label();
+            this.buttonSavePC_PAA = new System.Windows.Forms.Button();
             this.panelUpper_PAA.SuspendLayout();
             this.panelTitle_PAA.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -437,6 +437,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.buttonStatistic_PAA.Text = "Статистика";
             this.buttonStatistic_PAA.UseVisualStyleBackColor = false;
             this.buttonStatistic_PAA.Visible = false;
+            this.buttonStatistic_PAA.Click += new System.EventHandler(this.buttonStatistic_PAA_Click);
             // 
             // buttonAddNewSeller_PAA
             // 
@@ -448,6 +449,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.buttonAddNewSeller_PAA.Text = "Добавить Продавца";
             this.buttonAddNewSeller_PAA.UseVisualStyleBackColor = false;
             this.buttonAddNewSeller_PAA.Visible = false;
+            this.buttonAddNewSeller_PAA.Click += new System.EventHandler(this.buttonAddNewSeller_PAA_Click);
             // 
             // buttonSaveSeller_PAA
             // 
@@ -459,6 +461,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.buttonSaveSeller_PAA.Text = "Сохранить изменения";
             this.buttonSaveSeller_PAA.UseVisualStyleBackColor = false;
             this.buttonSaveSeller_PAA.Visible = false;
+            this.buttonSaveSeller_PAA.Click += new System.EventHandler(this.buttonSaveSeller_PAA_Click);
             // 
             // labelURL_PAA
             // 
@@ -532,17 +535,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxNameSeller_PAA.TabIndex = 7;
             this.textBoxNameSeller_PAA.Visible = false;
             // 
-            // buttonSavePC_PAA
-            // 
-            this.buttonSavePC_PAA.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonSavePC_PAA.Location = new System.Drawing.Point(118, 396);
-            this.buttonSavePC_PAA.Name = "buttonSavePC_PAA";
-            this.buttonSavePC_PAA.Size = new System.Drawing.Size(100, 48);
-            this.buttonSavePC_PAA.TabIndex = 5;
-            this.buttonSavePC_PAA.Text = "Сохранить изменения";
-            this.buttonSavePC_PAA.UseVisualStyleBackColor = false;
-            this.buttonSavePC_PAA.Visible = false;
-            // 
             // buttonAddNewPC_PAA
             // 
             this.buttonAddNewPC_PAA.BackColor = System.Drawing.Color.PeachPuff;
@@ -594,6 +586,18 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.labelSearch_PAA.TabIndex = 0;
             this.labelSearch_PAA.Text = "Поиск:";
             // 
+            // buttonSavePC_PAA
+            // 
+            this.buttonSavePC_PAA.BackColor = System.Drawing.Color.PeachPuff;
+            this.buttonSavePC_PAA.Location = new System.Drawing.Point(118, 396);
+            this.buttonSavePC_PAA.Name = "buttonSavePC_PAA";
+            this.buttonSavePC_PAA.Size = new System.Drawing.Size(100, 48);
+            this.buttonSavePC_PAA.TabIndex = 5;
+            this.buttonSavePC_PAA.Text = "Сохранить изменения";
+            this.buttonSavePC_PAA.UseVisualStyleBackColor = false;
+            this.buttonSavePC_PAA.Visible = false;
+            this.buttonSavePC_PAA.Click += new System.EventHandler(this.buttonSavePC_PAA_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -641,7 +645,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
         private System.Windows.Forms.TextBox textBoxPhoneNumber_PAA;
         private System.Windows.Forms.TextBox textBoxAddress_PAA;
         private System.Windows.Forms.TextBox textBoxNameSeller_PAA;
-        private System.Windows.Forms.Button buttonSavePC_PAA;
         private System.Windows.Forms.Button buttonAddNewPC_PAA;
         private System.Windows.Forms.Button buttonAddNewSeller_PAA;
         private System.Windows.Forms.Button buttonSaveSeller_PAA;
@@ -664,6 +667,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
         private System.Windows.Forms.DataGridView dataGridViewSeller_PAA;
         private System.Windows.Forms.Button buttonSearchPC_PAA;
         private System.Windows.Forms.TextBox textBoxClockFrequency_PAA;
+        private System.Windows.Forms.Button buttonSavePC_PAA;
     }
 }
 
