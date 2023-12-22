@@ -29,13 +29,13 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelStatistic_KKA = new System.Windows.Forms.Panel();
             this.textBoxAvgPrice_PAA = new System.Windows.Forms.TextBox();
             this.labelAvgPrice_PAA = new System.Windows.Forms.Label();
@@ -78,7 +78,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxAvgPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxAvgPrice_PAA.Location = new System.Drawing.Point(18, 190);
             this.textBoxAvgPrice_PAA.Name = "textBoxAvgPrice_PAA";
-            this.textBoxAvgPrice_PAA.ReadOnly = true;
             this.textBoxAvgPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxAvgPrice_PAA.TabIndex = 5;
             this.textBoxAvgPrice_PAA.TabStop = false;
@@ -101,7 +100,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxMaxPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxMaxPrice_PAA.Location = new System.Drawing.Point(18, 118);
             this.textBoxMaxPrice_PAA.Name = "textBoxMaxPrice_PAA";
-            this.textBoxMaxPrice_PAA.ReadOnly = true;
             this.textBoxMaxPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxMaxPrice_PAA.TabIndex = 3;
             this.textBoxMaxPrice_PAA.TabStop = false;
@@ -124,7 +122,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxMinPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxMinPrice_PAA.Location = new System.Drawing.Point(18, 47);
             this.textBoxMinPrice_PAA.Name = "textBoxMinPrice_PAA";
-            this.textBoxMinPrice_PAA.ReadOnly = true;
             this.textBoxMinPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxMinPrice_PAA.TabIndex = 1;
             this.textBoxMinPrice_PAA.TabStop = false;
@@ -175,38 +172,38 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(-4, 0);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart1.Series.Add(series5);
             this.chart1.Size = new System.Drawing.Size(561, 424);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
+            chartArea6.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea6);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            legend6.Name = "Legend1";
+            this.chart2.Legends.Add(legend6);
             this.chart2.Location = new System.Drawing.Point(3, 3);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart2.Series.Add(series6);
             this.chart2.Size = new System.Drawing.Size(551, 418);
             this.chart2.TabIndex = 1;
-            title2.Name = "График";
-            this.chart2.Titles.Add(title2);
+            title3.Name = "График";
+            this.chart2.Titles.Add(title3);
             // 
             // FormStatistic
             // 

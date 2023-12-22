@@ -203,7 +203,34 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
 
         private void buttonSearchPC_PAA_Click(object sender, EventArgs e)
         {
+            var data = ds.GetData(pathPC);
+            var searchText = textBoxSearch_PAA.Text.ToLower();
+            if (string.IsNullOrEmpty(searchText)) return;
+            var filteredData = new List<string[]>();
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                if (data[i, 0].ToLower().Contains(searchText) || data[i, 1].ToLower().Contains(searchText))
+                {
+                    var row = new string[data.GetLength(1)];
+                    for (int j = 0; j < row.Length; j++)
+                    {
+                        row[j] = data[i, j];
+                    }
+                    filteredData.Add(row);
+                }
+            }
 
+            var filteredDataArray = filteredData.ToArray();
+            dataGridViewPC_PAA.RowCount = filteredDataArray.Length;
+            dataGridViewPC_PAA.ColumnCount = filteredDataArray.Length == 0 ? 0 : filteredDataArray[0].Length;
+
+            for (int r = 0; r < filteredDataArray.Length; r++)
+            {
+                for (int c = 0; c < filteredDataArray[0].Length; c++)
+                {
+                    dataGridViewPC_PAA.Rows[r].Cells[c].Value = filteredDataArray[r][c];
+                }
+            }
         }
 
         private void buttonAddNewSeller_PAA_Click(object sender, EventArgs e)
