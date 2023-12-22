@@ -343,5 +343,37 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
                 MessageBox.Show("Данные обновлены!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void buttonSearchSeller_PAA_Click(object sender, EventArgs e)
+        {
+            var data = ds.GetData(pathSeller);
+            var searchText = textBoxSearch_PAA.Text.ToLower();
+            if (string.IsNullOrEmpty(searchText)) return;
+            var filteredData = new List<string[]>();
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                if (data[i, 0].ToLower().Contains(searchText) || data[i, 1].ToLower().Contains(searchText))
+                {
+                    var row = new string[data.GetLength(1)];
+                    for (int j = 0; j < row.Length; j++)
+                    {
+                        row[j] = data[i, j];
+                    }
+                    filteredData.Add(row);
+                }
+            }
+
+            var filteredDataArray = filteredData.ToArray();
+            dataGridViewSeller_PAA.RowCount = filteredDataArray.Length;
+            dataGridViewSeller_PAA.ColumnCount = filteredDataArray.Length == 0 ? 0 : filteredDataArray[0].Length;
+
+            for (int r = 0; r < filteredDataArray.Length; r++)
+            {
+                for (int c = 0; c < filteredDataArray[0].Length; c++)
+                {
+                    dataGridViewSeller_PAA.Rows[r].Cells[c].Value = filteredDataArray[r][c];
+                }
+            }
+        }
     }
 }
