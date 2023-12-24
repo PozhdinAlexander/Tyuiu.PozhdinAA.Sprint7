@@ -33,8 +33,13 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.panelTitle_PAA = new System.Windows.Forms.Panel();
             this.textBoxTitle_PAA = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonAbout_PAA = new System.Windows.Forms.Button();
+            this.buttonManual_PAA = new System.Windows.Forms.Button();
+            this.buttonSeller_PAA = new System.Windows.Forms.Button();
+            this.buttonPC_PAA = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxClockFrequency_PAA = new System.Windows.Forms.TextBox();
+            this.buttonSearchPC_PAA = new System.Windows.Forms.Button();
             this.dataGridViewSeller_PAA = new System.Windows.Forms.DataGridView();
             this.textBoxManufacturer_PAA = new System.Windows.Forms.TextBox();
             this.textBoxTypeCPU_PAA = new System.Windows.Forms.TextBox();
@@ -62,17 +67,12 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxPhoneNumber_PAA = new System.Windows.Forms.TextBox();
             this.textBoxAddress_PAA = new System.Windows.Forms.TextBox();
             this.textBoxNameSeller_PAA = new System.Windows.Forms.TextBox();
+            this.buttonSavePC_PAA = new System.Windows.Forms.Button();
             this.buttonAddNewPC_PAA = new System.Windows.Forms.Button();
             this.dataGridViewPC_PAA = new System.Windows.Forms.DataGridView();
             this.buttonSearchSeller_PAA = new System.Windows.Forms.Button();
             this.textBoxSearch_PAA = new System.Windows.Forms.TextBox();
             this.labelSearch_PAA = new System.Windows.Forms.Label();
-            this.buttonSavePC_PAA = new System.Windows.Forms.Button();
-            this.buttonAbout_PAA = new System.Windows.Forms.Button();
-            this.buttonManual_PAA = new System.Windows.Forms.Button();
-            this.buttonSeller_PAA = new System.Windows.Forms.Button();
-            this.buttonPC_PAA = new System.Windows.Forms.Button();
-            this.buttonSearchPC_PAA = new System.Windows.Forms.Button();
             this.panelUpper_PAA.SuspendLayout();
             this.panelTitle_PAA.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -115,6 +115,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxTitle_PAA.ReadOnly = true;
             this.textBoxTitle_PAA.Size = new System.Drawing.Size(815, 75);
             this.textBoxTitle_PAA.TabIndex = 0;
+            this.textBoxTitle_PAA.TabStop = false;
             this.textBoxTitle_PAA.Text = "Учет Электронно \r\nвычислительных машин";
             this.textBoxTitle_PAA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -129,6 +130,63 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 449);
             this.panel1.TabIndex = 1;
+            // 
+            // buttonAbout_PAA
+            // 
+            this.buttonAbout_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_loyalty_program_122452;
+            this.buttonAbout_PAA.Location = new System.Drawing.Point(82, 370);
+            this.buttonAbout_PAA.Name = "buttonAbout_PAA";
+            this.buttonAbout_PAA.Size = new System.Drawing.Size(88, 79);
+            this.buttonAbout_PAA.TabIndex = 3;
+            this.buttonAbout_PAA.UseVisualStyleBackColor = true;
+            this.buttonAbout_PAA.Click += new System.EventHandler(this.buttonAbout_PAA_Click);
+            // 
+            // buttonManual_PAA
+            // 
+            this.buttonManual_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManual_PAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.buttonManual_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_course_4728486__1_;
+            this.buttonManual_PAA.Location = new System.Drawing.Point(0, 370);
+            this.buttonManual_PAA.Name = "buttonManual_PAA";
+            this.buttonManual_PAA.Size = new System.Drawing.Size(84, 78);
+            this.buttonManual_PAA.TabIndex = 0;
+            this.buttonManual_PAA.UseVisualStyleBackColor = true;
+            this.buttonManual_PAA.Click += new System.EventHandler(this.buttonManual_PAA_Click);
+            // 
+            // buttonSeller_PAA
+            // 
+            this.buttonSeller_PAA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSeller_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSeller_PAA.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.buttonSeller_PAA.ForeColor = System.Drawing.Color.Black;
+            this.buttonSeller_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_loyal_customer_8922301__1_;
+            this.buttonSeller_PAA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSeller_PAA.Location = new System.Drawing.Point(0, 60);
+            this.buttonSeller_PAA.Name = "buttonSeller_PAA";
+            this.buttonSeller_PAA.Size = new System.Drawing.Size(170, 60);
+            this.buttonSeller_PAA.TabIndex = 1;
+            this.buttonSeller_PAA.TabStop = false;
+            this.buttonSeller_PAA.Text = "           Продавцы";
+            this.buttonSeller_PAA.UseVisualStyleBackColor = true;
+            this.buttonSeller_PAA.Click += new System.EventHandler(this.buttonSeller_PAA_Click);
+            // 
+            // buttonPC_PAA
+            // 
+            this.buttonPC_PAA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonPC_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPC_PAA.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.buttonPC_PAA.ForeColor = System.Drawing.Color.Black;
+            this.buttonPC_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_program_4191099__1_;
+            this.buttonPC_PAA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPC_PAA.Location = new System.Drawing.Point(0, 0);
+            this.buttonPC_PAA.Name = "buttonPC_PAA";
+            this.buttonPC_PAA.Size = new System.Drawing.Size(170, 60);
+            this.buttonPC_PAA.TabIndex = 0;
+            this.buttonPC_PAA.TabStop = false;
+            this.buttonPC_PAA.Text = "        ЭВМ";
+            this.buttonPC_PAA.UseVisualStyleBackColor = true;
+            this.buttonPC_PAA.Click += new System.EventHandler(this.buttonPC_PAA_Click);
             // 
             // panel2
             // 
@@ -180,6 +238,18 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxClockFrequency_PAA.Size = new System.Drawing.Size(100, 20);
             this.textBoxClockFrequency_PAA.TabIndex = 35;
             this.textBoxClockFrequency_PAA.Visible = false;
+            // 
+            // buttonSearchPC_PAA
+            // 
+            this.buttonSearchPC_PAA.BackColor = System.Drawing.Color.PeachPuff;
+            this.buttonSearchPC_PAA.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.buttonSearchPC_PAA.Location = new System.Drawing.Point(562, 3);
+            this.buttonSearchPC_PAA.Name = "buttonSearchPC_PAA";
+            this.buttonSearchPC_PAA.Size = new System.Drawing.Size(119, 38);
+            this.buttonSearchPC_PAA.TabIndex = 34;
+            this.buttonSearchPC_PAA.Text = "Искать";
+            this.buttonSearchPC_PAA.UseVisualStyleBackColor = false;
+            this.buttonSearchPC_PAA.Click += new System.EventHandler(this.buttonSearchPC_PAA_Click);
             // 
             // dataGridViewSeller_PAA
             // 
@@ -466,6 +536,18 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxNameSeller_PAA.TabIndex = 7;
             this.textBoxNameSeller_PAA.Visible = false;
             // 
+            // buttonSavePC_PAA
+            // 
+            this.buttonSavePC_PAA.BackColor = System.Drawing.Color.PeachPuff;
+            this.buttonSavePC_PAA.Location = new System.Drawing.Point(118, 396);
+            this.buttonSavePC_PAA.Name = "buttonSavePC_PAA";
+            this.buttonSavePC_PAA.Size = new System.Drawing.Size(100, 48);
+            this.buttonSavePC_PAA.TabIndex = 5;
+            this.buttonSavePC_PAA.Text = "Сохранить изменения";
+            this.buttonSavePC_PAA.UseVisualStyleBackColor = false;
+            this.buttonSavePC_PAA.Visible = false;
+            this.buttonSavePC_PAA.Click += new System.EventHandler(this.buttonSavePC_PAA_Click);
+            // 
             // buttonAddNewPC_PAA
             // 
             this.buttonAddNewPC_PAA.BackColor = System.Drawing.Color.PeachPuff;
@@ -518,87 +600,6 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.labelSearch_PAA.TabIndex = 0;
             this.labelSearch_PAA.Text = "Поиск:";
             // 
-            // buttonSavePC_PAA
-            // 
-            this.buttonSavePC_PAA.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonSavePC_PAA.Location = new System.Drawing.Point(118, 396);
-            this.buttonSavePC_PAA.Name = "buttonSavePC_PAA";
-            this.buttonSavePC_PAA.Size = new System.Drawing.Size(100, 48);
-            this.buttonSavePC_PAA.TabIndex = 5;
-            this.buttonSavePC_PAA.Text = "Сохранить изменения";
-            this.buttonSavePC_PAA.UseVisualStyleBackColor = false;
-            this.buttonSavePC_PAA.Visible = false;
-            this.buttonSavePC_PAA.Click += new System.EventHandler(this.buttonSavePC_PAA_Click);
-            // 
-            // buttonAbout_PAA
-            // 
-            this.buttonAbout_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAbout_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_loyalty_program_122452;
-            this.buttonAbout_PAA.Location = new System.Drawing.Point(82, 370);
-            this.buttonAbout_PAA.Name = "buttonAbout_PAA";
-            this.buttonAbout_PAA.Size = new System.Drawing.Size(88, 79);
-            this.buttonAbout_PAA.TabIndex = 3;
-            this.buttonAbout_PAA.UseVisualStyleBackColor = true;
-            this.buttonAbout_PAA.Click += new System.EventHandler(this.buttonAbout_PAA_Click);
-            // 
-            // buttonManual_PAA
-            // 
-            this.buttonManual_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonManual_PAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.buttonManual_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_course_4728486__1_;
-            this.buttonManual_PAA.Location = new System.Drawing.Point(0, 370);
-            this.buttonManual_PAA.Name = "buttonManual_PAA";
-            this.buttonManual_PAA.Size = new System.Drawing.Size(84, 78);
-            this.buttonManual_PAA.TabIndex = 0;
-            this.buttonManual_PAA.UseVisualStyleBackColor = true;
-            this.buttonManual_PAA.Click += new System.EventHandler(this.buttonManual_PAA_Click);
-            // 
-            // buttonSeller_PAA
-            // 
-            this.buttonSeller_PAA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSeller_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSeller_PAA.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.buttonSeller_PAA.ForeColor = System.Drawing.Color.Black;
-            this.buttonSeller_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_loyal_customer_8922301__1_;
-            this.buttonSeller_PAA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSeller_PAA.Location = new System.Drawing.Point(0, 60);
-            this.buttonSeller_PAA.Name = "buttonSeller_PAA";
-            this.buttonSeller_PAA.Size = new System.Drawing.Size(170, 60);
-            this.buttonSeller_PAA.TabIndex = 1;
-            this.buttonSeller_PAA.TabStop = false;
-            this.buttonSeller_PAA.Text = "           Продавцы";
-            this.buttonSeller_PAA.UseVisualStyleBackColor = true;
-            this.buttonSeller_PAA.Click += new System.EventHandler(this.buttonSeller_PAA_Click);
-            // 
-            // buttonPC_PAA
-            // 
-            this.buttonPC_PAA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonPC_PAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPC_PAA.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.buttonPC_PAA.ForeColor = System.Drawing.Color.Black;
-            this.buttonPC_PAA.Image = global::Tyuiu.PozhdinAA.Sprint7.Project.V12.Properties.Resources.free_icon_program_4191099__1_;
-            this.buttonPC_PAA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPC_PAA.Location = new System.Drawing.Point(0, 0);
-            this.buttonPC_PAA.Name = "buttonPC_PAA";
-            this.buttonPC_PAA.Size = new System.Drawing.Size(170, 60);
-            this.buttonPC_PAA.TabIndex = 0;
-            this.buttonPC_PAA.TabStop = false;
-            this.buttonPC_PAA.Text = "        ЭВМ";
-            this.buttonPC_PAA.UseVisualStyleBackColor = true;
-            this.buttonPC_PAA.Click += new System.EventHandler(this.buttonPC_PAA_Click);
-            // 
-            // buttonSearchPC_PAA
-            // 
-            this.buttonSearchPC_PAA.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonSearchPC_PAA.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
-            this.buttonSearchPC_PAA.Location = new System.Drawing.Point(562, 3);
-            this.buttonSearchPC_PAA.Name = "buttonSearchPC_PAA";
-            this.buttonSearchPC_PAA.Size = new System.Drawing.Size(119, 38);
-            this.buttonSearchPC_PAA.TabIndex = 34;
-            this.buttonSearchPC_PAA.Text = "Искать";
-            this.buttonSearchPC_PAA.UseVisualStyleBackColor = false;
-            this.buttonSearchPC_PAA.Click += new System.EventHandler(this.buttonSearchPC_PAA_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -608,6 +609,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelUpper_PAA);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DNS";
             this.panelUpper_PAA.ResumeLayout(false);
             this.panelTitle_PAA.ResumeLayout(false);

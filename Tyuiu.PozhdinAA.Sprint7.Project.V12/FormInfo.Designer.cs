@@ -73,6 +73,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.Controls.Add(this.buttonDone_PAA);
             this.Controls.Add(this.label1);
             this.Name = "FormInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeveloper_PAA)).EndInit();
             this.ResumeLayout(false);

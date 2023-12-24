@@ -29,13 +29,13 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelStatistic_KKA = new System.Windows.Forms.Panel();
             this.textBoxAvgPrice_PAA = new System.Windows.Forms.TextBox();
             this.labelAvgPrice_PAA = new System.Windows.Forms.Label();
@@ -45,15 +45,15 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.labelMin_PAA = new System.Windows.Forms.Label();
             this.tabControlGraph_PAA = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelStatistic_KKA.SuspendLayout();
             this.tabControlGraph_PAA.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelStatistic_KKA
@@ -78,6 +78,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxAvgPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxAvgPrice_PAA.Location = new System.Drawing.Point(18, 190);
             this.textBoxAvgPrice_PAA.Name = "textBoxAvgPrice_PAA";
+            this.textBoxAvgPrice_PAA.ReadOnly = true;
             this.textBoxAvgPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxAvgPrice_PAA.TabIndex = 5;
             this.textBoxAvgPrice_PAA.TabStop = false;
@@ -100,6 +101,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxMaxPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxMaxPrice_PAA.Location = new System.Drawing.Point(18, 118);
             this.textBoxMaxPrice_PAA.Name = "textBoxMaxPrice_PAA";
+            this.textBoxMaxPrice_PAA.ReadOnly = true;
             this.textBoxMaxPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxMaxPrice_PAA.TabIndex = 3;
             this.textBoxMaxPrice_PAA.TabStop = false;
@@ -122,6 +124,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.textBoxMinPrice_PAA.ForeColor = System.Drawing.Color.Black;
             this.textBoxMinPrice_PAA.Location = new System.Drawing.Point(18, 47);
             this.textBoxMinPrice_PAA.Name = "textBoxMinPrice_PAA";
+            this.textBoxMinPrice_PAA.ReadOnly = true;
             this.textBoxMinPrice_PAA.Size = new System.Drawing.Size(200, 35);
             this.textBoxMinPrice_PAA.TabIndex = 1;
             this.textBoxMinPrice_PAA.TabStop = false;
@@ -159,6 +162,25 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.tabPage1.Text = "Круговая";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // chart2
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend3.Name = "Legend1";
+            this.chart2.Legends.Add(legend3);
+            this.chart2.Location = new System.Drawing.Point(3, 3);
+            this.chart2.Name = "chart2";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
+            this.chart2.Size = new System.Drawing.Size(551, 418);
+            this.chart2.TabIndex = 1;
+            title2.Name = "График";
+            this.chart2.Titles.Add(title2);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.chart1);
@@ -172,38 +194,19 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             // 
             // chart1
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(-4, 0);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart1.Series.Add(series7);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(561, 424);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // chart2
-            // 
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chart2.Legends.Add(legend8);
-            this.chart2.Location = new System.Drawing.Point(3, 3);
-            this.chart2.Name = "chart2";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart2.Series.Add(series8);
-            this.chart2.Size = new System.Drawing.Size(551, 418);
-            this.chart2.TabIndex = 1;
-            title4.Name = "График";
-            this.chart2.Titles.Add(title4);
             // 
             // FormStatistic
             // 
@@ -213,14 +216,15 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.Controls.Add(this.tabControlGraph_PAA);
             this.Controls.Add(this.panelStatistic_KKA);
             this.Name = "FormStatistic";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Статистика ЭВМ";
             this.panelStatistic_KKA.ResumeLayout(false);
             this.panelStatistic_KKA.PerformLayout();
             this.tabControlGraph_PAA.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
