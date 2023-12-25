@@ -53,6 +53,7 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
             this.buttonDone_PAA.TabIndex = 1;
             this.buttonDone_PAA.Text = "Ok";
             this.buttonDone_PAA.UseVisualStyleBackColor = true;
+            this.buttonDone_PAA.Click += new System.EventHandler(this.buttonDone_PAA_Click);
             // 
             // pictureBoxDeveloper_PAA
             // 

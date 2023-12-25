@@ -16,5 +16,10 @@ namespace Tyuiu.PozhdinAA.Sprint7.Project.V12
         {
             InitializeComponent();
         }
+
+        private void buttonDone_PAA_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
